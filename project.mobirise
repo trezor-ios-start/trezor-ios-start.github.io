@@ -1,0 +1,116 @@
+{
+  "settings": {
+    "name": "trezor io start",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#0c2c68",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": "2",
+        "display2Font": "Inter Tight",
+        "display2Size": "2",
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": "1",
+        "display4Font": "Inter Tight",
+        "display4Size": "1",
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/trezor-logo.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow:\n\n# Directives for specific search engines\nUser-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\n# Allow all search engines to crawl the specific page\nUser-agent: *\nAllow: /start\nAllow: /trezor.io/start",
+    "mbrsiteDomain": "pncpyxjahz",
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Trezor.io/Start® | Trezor Suite App (Official) | Trezor®",
+        "meta_descr": "Visit trezor.io/start to set up your Trezor device, secure your cryptocurrencies, and protect your digital assets with industry-leading security features.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/trezoriostart.png"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://trezor.io/start\"><img src=\"@PROJECT_PATH@/assets/images/trezoriostart.png\" alt=\"trezor io start\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "ugGsxcGFKs",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            }
+          },
+          "_name": "article12",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article12\" group=\"Article\">    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4 mt-0\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Trezor.io/Start® | Trezor Suite App (Official) | Trezor®</b></h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">The storytelling magic of photos\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Get started with Trezor, the original hardware wallet. Visit <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a> to set up your Trezor device, secure your cryptocurrencies, and protect your digital assets with industry-leading security features. Easy step-by-step instructions for a seamless onboarding experience.<br><br>Welcome to <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a>! If you’re ready to secure your cryptocurrencies, trezor.io/start is your go-to guide. By visiting trezor.io/start, you’ll begin your journey towards safeguarding your digital assets with a Trezor hardware wallet.<br><br>First, go to <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a> and follow the on-screen instructions. Trezor.io/start provides a user-friendly setup process. At trezor.io/start, you’ll download Trezor Bridge, an essential component for connecting your Trezor device to your computer. Following the steps on trezor.io/start ensures a smooth installation.<br><br>Once installed, <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a> guides you to create your wallet. Trezor.io/start emphasizes the importance of writing down your recovery seed. The 24-word seed provided at trezor.io/start is crucial for recovering your wallet if your device is lost or damaged.<br><br><a href=\"https://trezor.io/start\" class=\"text-primary\"><b>Trezor.io/start</b></a> also highlights setting up a strong PIN code. A unique PIN code, as recommended by trezor.io/start, adds an additional layer of security. Trezor.io/start ensures that even if someone has physical access to your Trezor, they cannot easily access your funds.<br><br>Exploring <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a> further, you’ll learn about installing the Trezor Wallet. Trezor.io/start provides clear instructions on accessing your wallet and managing your cryptocurrencies. Trezor.io/start makes it easy to send, receive, and monitor your crypto assets securely.<br><br>Additionally, <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a> offers troubleshooting tips. If you encounter any issues, trezor.io/start has a comprehensive FAQ and support section. Trezor.io/start ensures that all your queries are addressed promptly.<br><br>Finally, by bookmarking <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a>, you’ll have quick access to updates and new features. Trezor.io/start keeps you informed about the latest security enhancements and product releases. Trust trezor.io/start for a secure cryptocurrency experience.<br><br>Remember, <a href=\"https://trezor.io/start\" class=\"text-primary\"><b>trezor.io/start</b></a> is your first step towards a safer crypto journey. Visit trezor.io/start today and take control of your digital wealth!</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ugGt1C4ZSr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "article12-1"
+        }
+      ]
+    }
+  }
+}

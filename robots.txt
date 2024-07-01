@@ -1,0 +1,14 @@
+User-agent: *
+Disallow:
+
+# Directives for specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Allow all search engines to crawl the specific page
+User-agent: *
+Allow: /start
+Allow: /trezor.io/start
